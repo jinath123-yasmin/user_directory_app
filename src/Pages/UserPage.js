@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import UserCard from '../components/UserCard';
 
 const UserPage=()=>{
@@ -15,7 +15,7 @@ const UserPage=()=>{
   }, []);
   return(
     <div>
-    <h1>User Directory</h1>
+    <h1 className='text-center'>User Directory</h1>
     <div className="user-container">
       {users && users.map(user => (
         <Link key={user.id} to={`/user/${user.id}`}>

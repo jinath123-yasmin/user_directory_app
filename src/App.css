@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .user-container {
   display: flex;
@@ -24,9 +22,9 @@
   transform: scale(1.05);
 }
 
-h1 {
+/* h1 {
   margin-bottom: 20px;
-}
+} */
 
 /* src/components/UserDetails.css */
 
@@ -55,3 +53,105 @@ select {
 .post-card:hover {
   transform: scale(1.05);
 }
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+
+}
+
+.user-header1 {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+
+}
+
+.user-header select {
+  margin-right: 10px;
+}
+
+.button-back {
+  padding: 8px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button-back:hover {
+  background-color: #2980b9;
+}
+
+.digital-clock {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.post-card {
+  width: 30%;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* DigitalClock.css */
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock-display {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.clock-controls button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} 
+
+.clock-controls button:hover {
+  background-color: #2980b9;
+}  
+
+
+.text-center{
+  text-align: center;
+}
+
+/* Add more styles as needed */
+
+
+
