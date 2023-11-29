@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useEffect, useState } from 'react';
 import { useParams,useNavigate } from 'react-router-dom';
 import DigitalClock from './DigitalClock';
@@ -45,9 +41,7 @@ function UserDetails() {
 
 
   const handleCountryChange = async (e) => {
-    // Pause the clock when changing the selected country
-    // setClockPaused(true);
-    // console.log(e.target.value);
+
     let countryData = e.target.value;
     let country = countryData.split("/")
     try {
