@@ -45,7 +45,8 @@ div {
   color: #80391e;
   border: 1px solid #ddd;
   padding: 10px;
-  width: 200px;
+  width: 300px; 
+  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
 }
@@ -62,12 +63,6 @@ div {
   align-items: center;
   padding: 10px;
   background-color: #f0f0f0;
-}
-
-.user-header {
-  display: flex;
-  align-items: center;
-
 }
 
 .user-header1 {
@@ -121,6 +116,7 @@ select {
 
 .user-details{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
