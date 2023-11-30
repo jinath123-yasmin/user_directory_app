@@ -65,6 +65,12 @@ div {
   background-color: #f0f0f0;
 }
 
+.user-header {
+  display: flex;
+  align-items: center;
+
+}
+
 .user-header1 {
   display: flex;
   align-items: center;
