@@ -6,7 +6,6 @@ const DigitalClock = ({ initialTime }) => {
   const intervalRef = useRef(null);
   const [refresh,setRefresh] = useState(false);
 
-  // console.log(initialTime);
   useEffect(() => {
     if (!isPaused) {
       intervalRef.current = setInterval(() => {
@@ -28,8 +27,6 @@ const DigitalClock = ({ initialTime }) => {
   };
 
   const formatTime = (time) => {
-    // console.log(initialTime);
-    // console.log(time)
     const x = new Date(Date.now(String(time)));
     const hours = x.getHours();
     const minutes = x.getMinutes();
@@ -39,9 +36,9 @@ const DigitalClock = ({ initialTime }) => {
   
 
   return (
-    <div className='user-header1'>
-      <p>{formatTime(time)}</p>
-      <button onClick={togglePause}>{isPaused ? 'Resume' : 'Pause'}</button>
+    <div className='clock-container'>
+      <p className="clock-display">{formatTime(time)}</p>
+      <button className='clock-controls' onClick={togglePause}>{isPaused ? 'Resume' : 'Pause'}</button>
     </div>
   );
 };

@@ -69,8 +69,8 @@ function UserDetails() {
   return (
     <div>
 
-    <div className='flex-container'>
-          <button onClick={() => navigate(-1)} className='text-center'>Back</button>
+    <div className='flex-container user-header'>
+          <button onClick={() => navigate(-1)} className=' button-back'>Back</button>
           <div className='user-header'>
               <select onChange={(e) => handleCountryChange(e)}>
                 {countryList.map((country, index) => (
@@ -85,12 +85,12 @@ function UserDetails() {
       <h1  className='text-center'> Profile Page</h1>
       <div className='user-details'>
         <div>
-            <h3>Name:{userDetails.name}</h3>
-            <h3>UserName:{userDetails.username}</h3>
+            <h3 className='text-decoration'>Name:<span>{userDetails.name}</span></h3>
+            <h3 className='text-decoration'>UserName: <span>{userDetails.username}</span></h3>
         </div>
         <div>
-            <p>Address: {userDetails.address && userDetails.address.city}, {userDetails.address && userDetails.address.country}</p>
-            <p>Email: {userDetails.email}</p>
+            <h3 className='text-decoration'>Address: <span> {userDetails.address && userDetails.address.city}, {userDetails.address && userDetails.address.country}</span></h3>
+            <h3 className='text-decoration'>Email: <span>{userDetails.email}</span></h3>
         </div>
         </div>
         <h2  className='text-center'>Posts</h2>

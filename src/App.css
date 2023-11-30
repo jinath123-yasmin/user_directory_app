@@ -29,9 +29,7 @@ div {
   margin-bottom: 20px;
 }
 
-select {
-  margin-top: 10px;
-}
+
 
 .posts-container {
   display: flex;
@@ -79,20 +77,26 @@ select {
 
 }
 
-.user-header select {
+select {
   margin-right: 10px;
+  padding: 10px;
+  color:#80391e;
+  font-size:15px;
+  width:200px;
 }
 
 .button-back {
-  padding: 8px;
-  background-color: #3498db;
-  color: #fff;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #bdd4e3;
+  font-size: 15px;
+  color: #80391e;
   border: none;
   cursor: pointer;
 }
 
 .button-back:hover {
-  background-color: #2980b9;
+  background-color: #76b5c5;
 }
 
 .digital-clock {
@@ -135,7 +139,7 @@ select {
   margin-bottom: 10px;
 }
 
-.clock-controls button {
+.clock-controls{
   padding: 8px 16px;
   font-size: 14px;
   background-color: #3498db;
@@ -149,9 +153,22 @@ select {
 }  
 
 
+
+
 .text-center{
   text-align: center;
   color:#80391e;
+  font-family: cursive;
+}
+
+.text-decoration{
+  color:#063970;
+  font-family: cursive;
+}
+
+span{
+  color:#80391e;
+  padding:10px;
   font-family: cursive;
 }
 
